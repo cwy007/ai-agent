@@ -2,6 +2,29 @@
 
 This Turborepo starter is maintained by the Turborepo core team.
 
+## Dependency Version Policy
+
+This workspace uses pnpm `catalog` in the root [pnpm-workspace.yaml](./pnpm-workspace.yaml) to centrally manage shared dependency versions.
+
+- Shared dependencies such as `next`, `react`, `react-dom`, `eslint`, `prettier`, and `typescript` must be declared in the root `catalog`.
+- Workspace packages and apps must reference those shared versions with `"catalog:"` instead of repeating concrete versions in each `package.json`.
+- When updating a shared dependency, change the version once in the root `catalog`, then run `pnpm install` from the workspace root.
+- Only package-specific dependencies that are not shared across the workspace should keep an explicit version in the local `package.json`.
+
+Example:
+
+```json
+{
+	"dependencies": {
+		"react": "catalog:",
+		"react-dom": "catalog:"
+	},
+	"devDependencies": {
+		"typescript": "catalog:"
+	}
+}
+```
+
 ## Using this example
 
 Run the following command:
