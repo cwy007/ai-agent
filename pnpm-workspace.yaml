@@ -13,6 +13,8 @@ catalog:
   prettier: ^3.7.4
   turbo: ^2.10.5
   typescript: 5.9.2
+  tailwindcss: ^4.1.15
+  "@tailwindcss/postcss": ^4.1.15
 
 allowBuilds:
   esbuild: true
