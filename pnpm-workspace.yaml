@@ -1,3 +1,18 @@
 packages:
   - "apps/*"
   - "packages/*"
+
+catalog:
+  next: 16.2.10
+  react: ^19.2.7
+  react-dom: ^19.2.7
+  "@types/node": ^22.15.3
+  "@types/react": 19.2.17
+  "@types/react-dom": 19.2.3
+  eslint: ^9.39.1
+  prettier: ^3.7.4
+  turbo: ^2.10.5
+  typescript: 5.9.2
+
+allowBuilds:
+  sharp: true
