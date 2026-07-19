@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "name": "ai-agent (root)",
+      "path": ".",
+    },
+    {
+      "name": "@repo/ui",
+      "path": "packages/ui",
+    },
+  ],
+  "settings": {
+    "tailwindCSS.includeLanguages": {
+      "typescript": "javascript",
+      "typescriptreact": "javascript",
+    },
+  },
+}
