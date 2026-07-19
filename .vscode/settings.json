@@ -1,14 +1,9 @@
 {
-  "tailwindCSS.experimental.configFile": "packages/ui/src/theme.css",
+  "tailwindCSS.experimental.configFile": "packages/ui/src/tailwind-css-intellisence.css",
   "tailwindCSS.includeLanguages": {
     "typescript": "javascript",
     "typescriptreact": "javascript"
   },
-  "tailwindCSS.files.exclude": [
-    "**/.git/**",
-    "**/node_modules/**",
-    "**/.next/**",
-    "**/.turbo/**"
-  ],
+  "tailwindCSS.files.exclude": ["**/.git/**", "**/node_modules/**", "**/.next/**", "**/.turbo/**"],
   "css.customData": [".vscode/css_custom_data.json"]
 }

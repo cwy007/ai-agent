@@ -1,5 +1,3 @@
-// import "./theme.css";
-
 type TailwindDemoProps = {
   appName: string;
 };
@@ -8,14 +6,14 @@ const features = ["Shared Tailwind utilities", "Shared theme tokens", "Rendered 
 
 export function TailwindDemo({ appName }: TailwindDemoProps) {
   return (
-    <section className="w-full max-w-4xl rounded-card border border-white/10 bg-[linear-gradient(135deg,rgba(79,124,255,0.16),rgba(255,255,255,0.04))] p-6 shadow-card backdrop-blur md:p-8">
+    <section className="w-full m-10 mx-auto max-w-4xl rounded-card border border-white/10 bg-[linear-gradient(135deg,rgba(79,124,255,0.16),rgba(255,255,255,0.04))] p-6 shadow-card backdrop-blur md:p-8">
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div className="space-y-4">
           <span className="inline-flex w-fit items-center rounded-full border border-brand-500/20 bg-brand-50 px-3 py-1 text-xs font-semibold tracking-[0.24em] text-brand-700 uppercase">
             shared ui
           </span>
           <div>
-            <h2 className="text-3xl font-semibold text-white md:text-4xl">
+            <h2 className="text-3xl font-semibold text-black md:text-4xl">
               Tailwind runs in {appName} and still styles shared TSX.
             </h2>
           </div>
@@ -24,7 +22,7 @@ export function TailwindDemo({ appName }: TailwindDemoProps) {
           {features.map((feature) => (
             <div
               key={feature}
-              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-slate-200 shadow-sm shadow-black/10"
+              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-slate shadow-sm shadow-black/10"
             >
               {feature}
             </div>
