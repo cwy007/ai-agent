@@ -15,4 +15,9 @@ catalog:
   typescript: 5.9.2
 
 allowBuilds:
+  esbuild: true
   sharp: true
+  workerd: true
+
+minimumReleaseAgeExclude:
+  - hono@4.12.31
