@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@repo
 import { Input } from "@repo/ui/input";
 import { Label } from "@repo/ui/label";
 import { Separator } from "@repo/ui/separator";
+import { Badge } from "@repo/ui/badge";
 import { TailwindDemo } from "@repo/ui/tailwind-demo";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
             <Button>Save draft</Button>
             <Button variant="secondary">Preview</Button>
             <Button variant="outline">Open docs</Button>
+            <Badge variant="error">error Badge</Badge>
           </div>
         </CardContent>
       </Card>
