@@ -11,12 +11,15 @@
     "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "@repo/api": "workspace:*",
+    "@repo/contracts": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
+    "hono": "catalog:",
     "next": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "tailwindcss": "catalog:",
-    "@tailwindcss/postcss": "catalog:"
+    "tailwindcss": "catalog:"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
