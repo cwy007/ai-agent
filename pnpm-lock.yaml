@@ -101,6 +101,9 @@ importers:
       tailwindcss:
         specifier: 'catalog:'
         version: 4.3.3
+      zod:
+        specifier: 'catalog:'
+        version: 4.4.3
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -132,6 +135,9 @@ importers:
       hono:
         specifier: 'catalog:'
         version: 4.12.31
+      zod:
+        specifier: 'catalog:'
+        version: 4.4.3
     devDependencies:
       typescript:
         specifier: 'catalog:'
@@ -169,6 +175,9 @@ importers:
       tailwindcss:
         specifier: 'catalog:'
         version: 4.3.3
+      zod:
+        specifier: 'catalog:'
+        version: 4.4.3
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*

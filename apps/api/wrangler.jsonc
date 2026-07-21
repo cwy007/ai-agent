@@ -2,7 +2,22 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "api",
   "main": "src/index.ts",
-  "compatibility_date": "2026-07-19"
+  "compatibility_date": "2026-07-19",
+  "vars": {
+    "APP_ENV": "development",
+  },
+  "env": {
+    "test": {
+      "vars": {
+        "APP_ENV": "test",
+      },
+    },
+    "production": {
+      "vars": {
+        "APP_ENV": "production",
+      },
+    },
+  },
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],

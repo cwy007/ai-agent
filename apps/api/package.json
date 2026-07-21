@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@repo/contracts": "workspace:*",
-    "hono": "catalog:"
+    "hono": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "typescript": "catalog:",
