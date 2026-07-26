@@ -6,8 +6,8 @@ import {
   type ApiMeta,
 } from '@repo/contracts'
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import { HTTPException } from 'hono/http-exception'
-import { validator } from 'hono/validator'
 import { getApiEnv } from './env'
 import { zValidator } from '@hono/zod-validator'
 
@@ -29,6 +29,15 @@ const app = new Hono<{
     APP_ENV: 'development' | 'test' | 'production'
   }
 }>()
+
+app.use(
+  '*',
+  cors({
+    origin: ['http://localhost:3005', 'http://127.0.0.1:3005'],
+    allowMethods: ['GET', 'POST', 'OPTIONS'],
+    allowHeaders: ['Content-Type'],
+  }),
+)
 
 function createMeta(): ApiMeta {
   return {

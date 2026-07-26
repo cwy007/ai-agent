@@ -9,6 +9,7 @@ import { WebEnvBadge } from "../src/web-env-badge";
 import type { AppType } from "@repo/api";
 import { BizCode, type ApiResponse, type PingRequest, type PingResponse } from "@repo/contracts";
 import { hc, type InferResponseType } from "hono/client";
+import { ClientPingDemo } from "@/client-api/system/client-ping-demo";
 
 const apiBaseUrl = process.env.API_BASE_URL ?? "http://127.0.0.1:8787";
 
@@ -80,6 +81,9 @@ export default async function Home() {
       <div>server {env.APP_ENV}</div>
       <div>{env.API_BASE_URL}</div>
       <WebEnvBadge />
+
+      <div>ClientPingDemo</div>
+      <ClientPingDemo />
     </section>
   );
 }

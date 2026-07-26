@@ -50,6 +50,13 @@ export const PingResponseSchema = z.object({
 export type PingRequest = z.infer<typeof PingRequestSchema>
 export type PingResponse = z.infer<typeof PingResponseSchema>
 
+const HealthResponseSchema = z.object({
+  service: z.literal('api'),
+  env: z.enum(['development', 'test', 'production']),
+})
+
+export type HealthResponse = z.infer<typeof HealthResponseSchema>
+
 export function buildSuccess<T>(data: T, meta: ApiMeta): ApiSuccess<T> {
   return { ok: true, data, meta }
 }
