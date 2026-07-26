@@ -21,7 +21,8 @@
     "react-dom": "catalog:",
     "tailwindcss": "catalog:",
     "zod": "catalog:",
-    "@tanstack/react-query": "catalog:"
+    "@tanstack/react-query": "catalog:",
+    "uuidv7": "catalog:"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
