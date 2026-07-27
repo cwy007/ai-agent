@@ -36,13 +36,13 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ai-agent-local-auth",
+      "database_id": "5126932a-5714-4154-8eca-2cd927406682",
+    },
+  ],
   // "ai": {
   //   "binding": "AI"
   // },

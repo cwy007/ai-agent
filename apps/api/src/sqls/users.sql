@@ -8,3 +8,5 @@ CREATE TABLE users (
   updated_at_ms INTEGER NOT NULL,
   last_login_at_ms INTEGER
 );
+
+-- npx wrangler d1 execute ai-agent-local-auth --local --config apps/api/wrangler.jsonc --file=apps/api/src/sqls/users.sql

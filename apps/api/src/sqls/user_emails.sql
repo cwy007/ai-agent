@@ -21,3 +21,5 @@ ON user_emails(user_id, normalized_email);
 CREATE UNIQUE INDEX idx_user_emails_one_primary_per_user
 ON user_emails(user_id)
 WHERE is_primary = 1;
+
+-- npx wrangler d1 execute ai-agent-local-auth --local --config apps/api/wrangler.jsonc --file=apps/api/src/sqls/user_emails.sql
