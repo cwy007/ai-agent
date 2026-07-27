@@ -13,6 +13,18 @@ npm run deploy
 npm run cf-typegen
 ```
 
+Apply the local D1 migration:
+
+```txt
+npm run d1:migrate:local
+```
+
+Recreate the local D1 database and apply the migration from scratch:
+
+```txt
+npm run d1:reset:local
+```
+
 Pass the `CloudflareBindings` as generics when instantiating `Hono`:
 
 ```ts

@@ -42,6 +42,11 @@
       "database_name": "ai-agent-local-auth",
       "database_id": "5126932a-5714-4154-8eca-2cd927406682",
     },
+    // {
+    //   "binding": "DB",
+    //   "database_name": "ai-agent-prod-auth",
+    //   "database_id": "2d24bcf8-502c-4a71-a3ac-ee72201df6fd",
+    // },
   ],
   // "ai": {
   //   "binding": "AI"
