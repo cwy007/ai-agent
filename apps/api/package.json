@@ -14,11 +14,13 @@
     "@hono/zod-validator": "^0.9.0",
     "@repo/contracts": "workspace:*",
     "hono": "catalog:",
-    "zod": "catalog:",
-    "uuidv7": "catalog:"
+    "jose": "^6.2.4",
+    "uuidv7": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "typescript": "catalog:",
-    "wrangler": "^4.110.0"
+    "wrangler": "^4.110.0",
+    "@types/node": "catalog:"
   }
 }
